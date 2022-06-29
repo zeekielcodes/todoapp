@@ -9,7 +9,7 @@ This is my solution to the [Todo app challenge on Frontend Mentor](https://www.f
 ### Links
 
 - Solution URL: [Check solution]()
-- Live Site URL: [Visit live site](https://thefacetodo.pages.dev)
+- Live Site URL: [Visit live site](https://thefacetodoapp.pages.dev)
 
 ### Built with
 

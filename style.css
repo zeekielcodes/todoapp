@@ -195,6 +195,7 @@ body.light {
 .Cancel {
   position: absolute;
   right: 2em;
+  display: none;
 }
 
 
@@ -203,7 +204,7 @@ body.light {
 
    
     .container {
-        width: 80%;
+        width: 80vw;
     }
 
     .container h1 {
@@ -230,5 +231,6 @@ body.light {
 
     .Cancel {
         right: 1em;
+        display: block;
     }
 }
