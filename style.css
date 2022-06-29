@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url("./images/bg-desktop-dark.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(235, 21%, 11%);
+    font-family: Josefin Sans;
+}
+
+.container {
+    width: 60em;
+    min-height: 80vh;
+    /* position:relative; */
+}
+
+.container h1 {
+    font-size: 3em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.todoform form {
+    width: 100%;
+    height: 100%;
+}
+
+.container .todoform {
+    width: 100%;
+    height: 3.5em;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    font-size: 1.6em;
+    background: hsl(235, 24%, 19%);
+
+}
+
+.todoform input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: hsl(234, 39%, 85%);
+    font-family: Josefin Sans;
+    height: 100%;
+    width: 100%;
+    font-size: 1.1em;
+    padding: .7em 0;
+}
+
+.tasks {
+    width: 100%;
+    /* background: hsl(233, 14%, 35%); */
+    height: 50em;
+    background: hsl(235, 24%, 19%);
+    margin-top: 2em;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    position: relative;
+    /* padding: 1em; */
+}
+
+.task-footer {
+    display: flex;
+    width: 37.5em;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    /* right: 0; */
+    font-size: 1.6em;
+    color: hsl(234, 11%, 52%);
+    padding: 1em;
+    background-color: hsl(235, 24%, 19%);
+    border-top: 1px solid hsl(234, 11%, 52%);
+}
+
+.todo {
+    padding: 1em 2em;
+    font-size: 1.6em;
+    color:  hsl(234, 39%, 85%);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid hsl(234, 11%, 52%);
+    /* font-weight: 700; */
+}
+
+.check {
+    height: 1.5em;
+    width: 1.5em;
+    background: transparent;
+    border-radius: 50%;
+    /* padding: .2em .3em; */
+    margin-right: 1em;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid hsl(233, 14%, 35%);
+}
+
+div.check  img {
+    /* width: 100%; */
+    /* height: 100%;s */
+    display: none;
+}
+
+.completed p {
+    text-decoration: line-through;
+    color: hsl(233, 14%, 35%);
+}
+
+.completed .check img {
+    display: block;
+}
+
+.completed .check {
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+}
+
+span {
+    cursor: pointer;
+}
+
+span:hover {
+    color: hsl(220, 98%, 61%);
+}
+
+body.light {
+    background: url("./images/bg-desktop-light.jpg");
+    background-color: hsl(236, 33%, 92%);
+    background-repeat: no-repeat;
+}
+
+.container .todoform.light {
+    background-color: hsl(0, 0%, 98%);
+}
+
+
+.todoform input.light {
+    color: hsl(235, 19%, 35%);
+}
+
+.tasks.light {
+    /* color: hsl(235, 19%, 35%); */
+    background: hsl(0, 0%, 98%);
+    color: hsl(235, 21%, 11%);
+    /* box-shadow: 2px 2px 2px hsl(234, 39%, 85%), -2px -2px 2px hsl(234, 39%, 85%); */
+}
+
+.check.light {
+    border: 2px solid hsl(236, 33%, 92%);
+}
+
+.todo.light {
+    color: hsl(235, 24%, 19%);
+    border-bottom: 1px solid hsl(234, 39%, 85%);
+}
+
+.todo.light p {
+    color: hsl(235, 21%, 11%);
+}
+
+
+.todo.light .check {
+    border: 2px solid hsl(234, 11%, 52%);    
+}
+
+.task-footer.light {
+    background: hsl(0, 0%, 98%);
+}
+
+.Cancel {
+  position: absolute;
+  right: 2em;
+}
+
+
+
+@media (max-width:600px) {
+
+   
+    .container {
+        width: 80%;
+    }
+
+    .container h1 {
+        font-size: 2.5em;
+    }
+
+    .container .todoform  {
+        padding: 1em;
+    }
+
+    .task-footer {
+        display: block;
+        width: 80%;
+    }
+
+    .task-footer p {
+        margin: .5em 0;
+        width: 100%;
+    }
+
+    .todo {
+        padding: 1.2em 1em;
+    }
+
+    .Cancel {
+        right: 1em;
+    }
+}
